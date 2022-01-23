@@ -197,51 +197,6 @@
                                 </div>                                
                             </div>
                         </div>
-
-
-                        <!-- <div class="container mt48">
-                            <ul>
-                                <li><p style="font-weight: bold;">Export Partners type Company:</p> Synchronize Odoo Partner to Odyssee company
-                                    <ul>
-                                        <li>Automatically create work order location for each customer</li>
-                                        <li>Create location based on address (Invoice, delivery, private, and other address)</li>
-                                    </ul>
-                                </li>
-                                <br>
-                                <li><p style="font-weight: bold;">Export Partners.Contact:</p> Synchronize Odoo Contact of Partner to Odyssee contact
-                                    <ul>
-                                        <li><p style="font-weight: bold;">Enable Service Desk Access:</p> if enable, contacts will be granted to service desk and the Odoo.Contact.Email will be used for service desk login</li>
-                                    </ul>
-                                </li>
-                                <br>
-                                <li><p style="font-weight: bold;">Export products:</p> synchronize Odoo product to Odyssee article, and product.category to Odyssee Article Category. 
-                                    <ul>
-                                        <li><p style="font-weight: bold;">Filter by Product category:</p> When it is checked, step 4 'Select article categories to export' will be displayed, then the user can select the category that they want to import from Odoo to ODS</li>
-                                        <li><p style="font-weight: bold;">Export Product Prices</p>
-                                            <ul>
-                                                <li>None: No Odoo products prices will be sent to Odyssee</li>
-                                                <li>Default price: The Odoo product price lists will be sent to Odyssee. Please make sure that each price list contains a price for each product!</li>
-                                                <li>Pricelist: Based on Odoo rule, calculate the prices list of Odoo products on Odyssee</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <br>
-                                <li><p style="font-weight: bold;">Export Work Order:</p> Send completed work orders to Odoo
-                                    <ul>
-                                        <li><p style="font-weight: bold;">Export Invoice As</p>
-                                            <ul>
-                                                <li>Sales Invoice: Send completed work orders to Odoo Sales Invoice</li>
-                                                <li>Sales Orders: Send completed work orders to Odoo Sales Orders</li>
-                                                <li>Let Odoo compute the products prices: When sending an invoice from Odyssee to Odoo, we can let Odoo compute the price on the fly (and all the rules of Odoo will be applied) or we can use the price that has been computed in Odyssee</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <br>
-                                <li><p style="font-weight: bold;">Sync Enable:</p> Background sync will be enabled for this plugin</li>
-                            </ul>
-                        </div> -->
                     </div>
                     <div class="tab-pane" id="installation">
                         <div class="container">
@@ -300,11 +255,15 @@
                                 </div>
                                 <div id="faq2" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
                                     <div>
-                                        <ul>
-                                            <li>You need to ensure the Odoo Api is running and reachable from your connector.</li>
-                                            <li>You need to provide the Odoo DatabaseName, and valid user credentials.</li>
-                                            <li>The user must be able to have full access to the entities we are working (ResPartner, Product, Orders, PriceList) in read/write.</li>
-                                        </ul>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            You need to ensure the Odoo Api is running and reachable from your connector.
+                                        </p>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            You need to provide the Odoo DatabaseName, and valid user credentials.
+                                        </p>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            The user must be able to have full access to the entities we are working (ResPartner, Product, Orders, PriceList) in read/write.
+                                        </p>
                                      </div>
                                 </div>
                             </div>
@@ -344,11 +303,15 @@
                                 </div>
                                 <div id="faq4" class="panel-collapse collapse" style="background-color:rgb(240, 244, 247); padding:15px">
                                     <div>
-                                       <ul>
-                                            <li>In Odyssee, make sure the billable hour types have the same code as their corresponding product in Odoo. So for each hour type, in the field 'code', fill in the corresponding article reference number.</li>
-                                            <li>Dummy products are supported by this connector. When using dummy articles, the price and the description will be given when creating the Order.</li>
-                                            <li>If you synchronize the products from Odoo to Odyssee, the 'sample' articles that are currently in the database and don't come from Odoo will be removed.</li>
-                                       </ul>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            In Odyssee, make sure the billable hour types have the same code as their corresponding product in Odoo. So for each hour type, in the field 'code', fill in the corresponding article reference number.    
+                                        </p>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            Dummy products are supported by this connector. When using dummy articles, the price and the description will be given when creating the Order.    
+                                        </p>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            If you synchronize the products from Odoo to Odyssee, the 'sample' articles that are currently in the database and don't come from Odoo will be removed.    
+                                        </p>
                                      </div>
                                 </div>
                             </div>
