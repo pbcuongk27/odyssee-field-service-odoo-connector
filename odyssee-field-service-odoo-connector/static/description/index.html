@@ -56,7 +56,146 @@
             <div id="loempia_tabs_content_ept" class="container-fluid" style="border:1px solid #eee; border-radius:10px">
                 <div class="tab-content container pt-3" id="tabs_content">
                     <div class="tab-pane active" id="presentation">
-                        <div class="container mt48">
+                        <div class="s_faq mt32 mb32" style="border-radius:10px; background-color:#fff !important">
+                            <div class="panel-group" id="accordion" role="tablist" style="margin-bottom:20px" aria-multiselectable="true">
+                                <div class="panel panel-default overflow-hidden" style="border-radius:10px">
+                                    <div class="panel-heading mt0" style="border:1px solid transparent !important">
+                                        <h4 class="panel-title  p-2" style="margin:0">
+                                            <a class="collapsed" style="color:#000; font-size:20px; font-weight:500; font-family:Roboto; padding:15px 15px 15px 50px; line-height:158%" data-toggle="collapse" href="#presentation1" aria-expanded="false">
+                                                <span class="panelcontent">
+                                                    Export Partners type Company
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div id="presentation1" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
+                                    <div>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            Synchronize Odoo Partner to Odyssee company.                                            
+                                        </p>
+                                        <ul>
+                                            <ul>
+                                                <li>Automatically create work order location for each customer</li>
+                                                <li>Create location based on address (Invoice, delivery, private, and other address)</li>
+                                            </ul>
+                                        </ul>                                        
+                                     </div>
+                                </div>                                
+                            </div>
+
+                            <div class="panel-group" id="accordion" role="tablist" style="margin-bottom:20px" aria-multiselectable="true">
+                                <div class="panel panel-default overflow-hidden" style="border-radius:10px">
+                                    <div class="panel-heading mt0" style="border:1px solid transparent !important">
+                                        <h4 class="panel-title  p-2" style="margin:0">
+                                            <a class="collapsed" style="color:#000; font-size:20px; font-weight:500; font-family:Roboto; padding:15px 15px 15px 50px; line-height:158%" data-toggle="collapse" href="#presentation2" aria-expanded="false">
+                                                <span class="panelcontent">
+                                                    Export Partners.Contact
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div id="presentation2" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
+                                    <div>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            Synchronize Odoo Contact of Partner to Odyssee contact.                                            
+                                        </p>                                                                            
+                                     </div>
+                                </div>                                
+                            </div>
+
+                            <div class="panel-group" id="accordion" role="tablist" style="margin-bottom:20px" aria-multiselectable="true">
+                                <div class="panel panel-default overflow-hidden" style="border-radius:10px">
+                                    <div class="panel-heading mt0" style="border:1px solid transparent !important">
+                                        <h4 class="panel-title  p-2" style="margin:0">
+                                            <a class="collapsed" style="color:#000; font-size:20px; font-weight:500; font-family:Roboto; padding:15px 15px 15px 50px; line-height:158%" data-toggle="collapse" href="#presentation3" aria-expanded="false">
+                                                <span class="panelcontent">
+                                                    Export products
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div id="presentation3" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
+                                    <div>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            Synchronize Odoo product to Odyssee article, and product.category to Odyssee Article Category.                                           
+                                        </p>           
+                                        <ul>
+                                            <li>
+                                                <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">Filter by Product category</p> 
+                                                <ul>
+                                                    When it is checked, step 4 'Select article categories to export' will be displayed, then the user can select the category that they want to import from Odoo to ODS.
+                                                </ul>
+                                            </li>
+                                            <li><p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">There are 3 options</p> 
+                                                <ul>
+                                                    <li>None: No Odoo products prices will be sent to Odyssee.</li>
+                                                    <li>Default price: The Odoo product price lists will be sent to Odyssee. Please make sure that each price list contains a price for each product!</li>
+                                                    <li>Pricelist: Based on Odoo rule, calculate the prices list of Odoo products on Odyssee.</li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>                                                                 
+                                     </div>
+                                </div>                                
+                            </div>
+
+                            <div class="panel-group" id="accordion" role="tablist" style="margin-bottom:20px" aria-multiselectable="true">
+                                <div class="panel panel-default overflow-hidden" style="border-radius:10px">
+                                    <div class="panel-heading mt0" style="border:1px solid transparent !important">
+                                        <h4 class="panel-title  p-2" style="margin:0">
+                                            <a class="collapsed" style="color:#000; font-size:20px; font-weight:500; font-family:Roboto; padding:15px 15px 15px 50px; line-height:158%" data-toggle="collapse" href="#presentation4" aria-expanded="false">
+                                                <span class="panelcontent">
+                                                    Export Work Order
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div id="presentation4" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
+                                    <div>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            Send completed work orders to Odoo.                                           
+                                        </p>           
+                                        <ul>
+                                            <li><p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">Export Invoice As</p> 
+                                                <ul>
+                                                    <li>Sales Invoice: Send completed work orders to Odoo Sales Invoice</li>
+                                                    <li>Sales Orders: Send completed work orders to Odoo Sales Orders</li>
+                                                    <li>Let Odoo compute the products prices: When sending an invoice from Odyssee to Odoo, we can let Odoo compute the price on the fly (and all the rules of Odoo will be applied) or we can use the price that has been computed in Odyssee</li>
+                                                </ul>
+                                            </li>                                            
+                                        </ul>                                                                 
+                                     </div>
+                                </div>                                
+                            </div>
+
+                            <div class="panel-group" id="accordion" role="tablist" style="margin-bottom:20px" aria-multiselectable="true">
+                                <div class="panel panel-default overflow-hidden" style="border-radius:10px">
+                                    <div class="panel-heading mt0" style="border:1px solid transparent !important">
+                                        <h4 class="panel-title  p-2" style="margin:0">
+                                            <a class="collapsed" style="color:#000; font-size:20px; font-weight:500; font-family:Roboto; padding:15px 15px 15px 50px; line-height:158%" data-toggle="collapse" href="#presentation5" aria-expanded="false">
+                                                <span class="panelcontent">
+                                                    Sync Background Enable
+                                                </span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div id="presentation5" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
+                                    <div>
+                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                            Background sync will be enabled for this plugin.
+                                        </p>                                                             
+                                     </div>
+                                </div>                                
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="container mt48">
                             <ul>
                                 <li><p style="font-weight: bold;">Export Partners type Company:</p> Synchronize Odoo Partner to Odyssee company
                                     <ul>
@@ -98,7 +237,7 @@
                                 <br>
                                 <li><p style="font-weight: bold;">Sync Enable:</p> Background sync will be enabled for this plugin</li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="tab-pane" id="installation">
                         <div class="container">
@@ -108,7 +247,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <ul>
-                                        <li><p style="font-weight: bold;">Odoo API URL:</p> Be sure this url is reachable from outside your intranet. On the majority of the case, it looks likes https://YourOdooServer.odoo.com/</li>
+                                        <li><p style="font-weight: bold;">Odoo API URL:</p> Be sure this url is reachable from outside your intranet. On the majority of the case, it looks likes https://YourOdooServer.odoo.com</li>
                                         <br>
                                         <li><p style="font-weight: bold;">Company DB:</p> this is the dbname you see when login on Odoo. After sign in Odoo and clicking on the menu 'My Databases', you can find database that you want to connect on the screen 'Your Databases' </li>
                                         <br>
