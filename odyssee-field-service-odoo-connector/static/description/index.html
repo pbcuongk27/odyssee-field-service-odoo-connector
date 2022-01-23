@@ -205,15 +205,11 @@
                                 </div>
                                 <div id="faq4" class="panel-collapse collapse" style="background-color:rgb(240, 244, 247); padding:15px">
                                     <div>
-                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
-                                            1. In Odyssee, make sure the billable hour types have the same code as their corresponding product in Odoo. So for each hour type, in the field 'code', fill in the corresponding article reference number.    
-                                        </p>
-                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
-                                            2. Dummy products are supported by this connector. When using dummy articles, the price and the description will be given when creating the Order.    
-                                        </p>
-                                        <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
-                                            3. If you synchronize the products from Odoo to Odyssee, the 'sample' articles that are currently in the database and don't come from Odoo will be removed.
-                                        </p>
+                                        <ul>
+                                            <li>You need to ensure the Odoo Api is running and reachable from your connector.</li>
+                                            <li>You need to provide the Odoo DatabaseName, and valid user credentials.</li>
+                                            <li>The user must be able to have full access to the entities we are working (ResPartner, Product, Orders, PriceList) in read/write.</li>
+                                        </ul>
                                      </div>
                                 </div>
                             </div>
@@ -237,7 +233,35 @@
                                 </div>
                             </div>
                             
-                        </div>                        
+                        </div>
+                        
+                        <!-- <div class="container">
+                            <div class="row">
+                                <ul>
+                                    <li><p style="font-weight: bold;">Why connect your Odoo software with Odyssee?</p> Because this will strongly reduce the risk to have duplicate or onconsistent data. Odyssee is using the Odoo Service Layer to ensure the business process are followed</li>
+                                    <br>
+                                    <li><p style="font-weight: bold;">What are the requirements to connect Odoo to Odyssee?</p> 
+                                        <ol>
+                                            <li>You need to ensure the Odoo Api is running and reachable from your connector</li>
+                                            <li>You need to provide the Odoo DatabaseName, and valid user credentials.</li>
+                                            <li>The user must be able to have full access to the entities we are working (ResPartner, Product, Orders, PriceList) in read/write</li>
+                                        </ol> 
+                                    </li>
+                                    <br>
+                                    <li><p style="font-weight: bold;">What are the configurations you need to setup in Odoo?</p> We don't need additional configuration in Odoo</li>
+                                    <br>
+                                    <li><p style="font-weight: bold;">What are the configuration you need to setup in Odyssee?</p>
+                                        <ol>
+                                            <li>In Odyssee, make sure the billable hour types have the same code as their corresponding product in Odoo. So for each hour type, in the field 'code', fill in the corresponding article reference number.</li>
+                                            <li>Dummy products are supported by this connector. When using dummy articles, the price and the description will be given when creating the Order.</li>
+                                            <li>If you synchronize the products from Odoo to Odyssee, the 'sample' articles that are currently in the database and don't come from Odoo will be removed</li>
+                                        </ol>
+                                    </li>
+                                    <br>
+                                    <li><p style="font-weight: bold;">How to allow Odyssee to use your Odoo data?</p> All you need to do is just follow the wizard by cliking 'Next' below.This will ask you to fill the required fields on the setting page, where you can choose what you want to synchronize</li>
+                                </ul>
+                            </div>    
+                        </div> -->
                     </div>
                     <div class="tab-pane" id="support">
                         <img src="ods_fsa_app.png" class="img-fluid d-block mx-auto"/>
