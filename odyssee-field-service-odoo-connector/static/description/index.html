@@ -121,7 +121,27 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="faqs">
-                        <div class="container">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default overflow-hidden" style="border-radius:10px">
+                                <div class="panel-heading mt0" style="border:1px solid transparent !important">
+                                    <h4 class="panel-title  p-2" style="margin:0">
+                                        <a class="collapsed" style="color:#000; font-size:20px; font-weight:500; font-family:Roboto; padding:15px 15px 15px 50px; line-height:158%" data-toggle="collapse" href="#faq1" aria-expanded="false">
+                                            <span class="panelcontent">
+                                                Why connect your Odoo software with Odyssee?
+                                            </span>
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div id="faq1" class="panel-collapse collapse" style="background-color: rgb(240, 244, 247); padding: 15px;">
+                                <div>
+                                    <p class="mb0" style="height:auto; padding-left:2%; margin-left:2%; font-family:Roboto">
+                                        Because this will strongly reduce the risk to have duplicate or onconsistent data. Odyssee is using the Odoo Service Layer to ensure the business process are followed.
+                                    </p>
+                                 </div>
+                            </div>
+                        </div>
+                        <!-- <div class="container">
                             <div class="row">
                                 <ul>
                                     <li><p style="font-weight: bold;">Why connect your Odoo software with Odyssee?</p> Because this will strongly reduce the risk to have duplicate or onconsistent data. Odyssee is using the Odoo Service Layer to ensure the business process are followed</li>
@@ -147,7 +167,7 @@
                                     <li><p style="font-weight: bold;">How to allow Odyssee to use your Odoo data?</p> All you need to do is just follow the wizard by cliking 'Next' below.This will ask you to fill the required fields on the setting page, where you can choose what you want to synchronize</li>
                                 </ul>
                             </div>    
-                        </div>
+                        </div> -->
                     </div>
                     <div class="tab-pane" id="support">
                         <img src="ods_fsa_app.png" class="img-fluid d-block mx-auto"/>
